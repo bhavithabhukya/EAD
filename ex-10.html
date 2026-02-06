@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CBIT College</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0 0 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #0066cc;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .main {
+            flex: 1;
+            background-color: #e6f2ff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CBIT College</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Departments</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Quick Links</h2>
+            <ul>
+                <li>Admissions</li>
+                <li>Exams</li>
+                <li>Events</li>
+                <li>Alumni</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Welcome to CBIT College</h2>
+            <p>
+                CBIT College provides quality education in IT and related fields. Explore departments and events to stay updated.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 CBIT College. All rights reserved.
+    </footer>
+
+</body>
+</html>

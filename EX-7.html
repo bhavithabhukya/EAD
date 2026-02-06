@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Web Page Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            min-height: 400px;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 1;
+            background-color: #ddd;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Website Header</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
