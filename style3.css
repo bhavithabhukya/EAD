@@ -1,0 +1,59 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    text-align: center;
+}
+
+
+form {
+    width: 350px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+   
+}
+
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+
+textarea {
+    height: 120px;
+}
+
+
+input:focus, textarea:focus {
+    border-color: green;
+    outline: none;
+    background-color: #f9fff9;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    
+}
+
+
+button:hover {
+    background-color: darkgreen;
+}
