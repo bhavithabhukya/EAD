@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.chessboard {
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+.chessboard td {
+    width: 60px;
+    height: 60px;
+}
+
+/* Alternate colors */
+.chessboard tr:nth-child(even) td:nth-child(odd),
+.chessboard tr:nth-child(odd) td:nth-child(even) {
+    background-color: black;
+}
+
+.chessboard tr:nth-child(even) td:nth-child(even),
+.chessboard tr:nth-child(odd) td:nth-child(odd) {
+    background-color: white;
+}
