@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Count Vowels</h1>
+    <script>
+      let countvowels = function (str) {
+        let count = 0;
+        let vowels = "aeiouAEIOU";
+        for (let i = 0; i < str.length; i++) {
+          if (vowels.includes(str[i])) {
+            count++;
+          }
+        }
+        return count;
+      };
+      console.log(countvowels("hello"));
+      console.log(countvowels("hel"));
+    </script>
+  </body>
+</html>

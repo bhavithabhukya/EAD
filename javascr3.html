@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>ARMSTONG NUMBER</h1>
+    <script>
+      function isArmstrong(n) {
+        let original = n;
+        let sum = 0;
+        let digits = n.toString().length;
+        while (n > 0) {
+          let digit = n % 10;
+          sum = sum + Math.pow(digit, digits);
+          n = Math.floor(n / 10);
+        }
+        return original == sum;
+      }
+      console.log(isArmstrong(153));
+      console.log(isArmstrong(123));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Longest Word</h1>
+    <script>
+      let findlongword = function (sentence) {
+        let words = sentence.split(" ");
+        let longest = "";
+        for (let i = 0; i < words.length; i++) {
+          if (words[i].length > longest.length) {
+            longest = words[i];
+          }
+        }
+        return longest;
+      };
+      console.log(findlongword("hi iam Bhavitha"));
+    </script>
+  </body>
+</html>

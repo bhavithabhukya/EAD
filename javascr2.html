@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Palindrome</h1>
+    <script>
+      function isPalindrome(n) {
+        let original = n;
+        let reverse = 0;
+        while (n > 0) {
+          let digit = n % 10;
+          reverse = reverse * 10 + digit;
+          n = Math.floor(n / 10);
+        }
+        return original == reverse;
+      }
+      console.log(isPalindrome(123));
+      console.log(isPalindrome(121));
+    </script>
+  </body>
+</html>
